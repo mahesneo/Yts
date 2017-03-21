@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Latest_uploads"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Latest Uploads" />
+        <item
+            android:id="@+id/nav_Apply_Filter"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Apply Filter" />
+        <item
+            android:id="@+id/nav_Serach"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+</menu>

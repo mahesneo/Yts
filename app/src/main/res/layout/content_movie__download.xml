@@ -1,0 +1,271 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_movie__download"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yts.mahes.yts.Movie_Download"
+    tools:showIn="@layout/activity_movie__download">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                app:srcCompat="@drawable/attention"
+                android:layout_weight="0.8" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#64dd17" />
+
+        <TextView
+            android:id="@+id/moviename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="Movie name"
+            android:textColor="@color/blackshade"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blackshade"
+            android:text="year"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#64dd17" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/rating"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/Rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingLeft="5dp"
+                android:text="Rating" />
+
+            <TextView
+                android:id="@+id/ratingvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blackshade"
+                android:text="ratingvalue"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/mparating"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/MPArating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="MPA Rating" />
+
+            <TextView
+                android:id="@+id/MPAratingvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blackshade"
+                android:text="mparating"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/runtime"
+                android:layout_weight="0.1" />
+
+
+            <TextView
+                android:id="@+id/Runtime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Runtime" />
+
+            <TextView
+                android:id="@+id/runtimevalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blackshade"
+                android:text="runtime"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/mparating"
+                android:layout_weight="0.1" />
+
+
+            <TextView
+                android:id="@+id/Genre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Genre" />
+
+            <TextView
+                android:id="@+id/genrevalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blackshade"
+                android:text="genre"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/movieImage"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/hq"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/Quality"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Quality" />
+
+            <TextView
+                android:id="@+id/qualityvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blackshade"
+                android:text="quality"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#64dd17" />
+
+        <TextView
+            android:id="@+id/synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blackshade"
+            android:text="Synopsis"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/brief"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="brief" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
